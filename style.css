@@ -1,0 +1,105 @@
+@font-face {
+    font-family: IRANSans;
+    src: url(./fonts/IRANSans\(FaNum\)_Medium.ttf);
+  }
+
+
+#master{
+    text-align: center;
+    background-color: #eee;
+}
+h2{
+    background:#fff;
+    margin: 10px 0 10px 0;
+    padding: 10px 0 20px 0;
+}
+#sliderMain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0 20px 0;
+    max-width: 1000px;
+    margin: 0 auto;
+    height: auto;
+}
+#boxImages{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width:100%;
+    height: 100%;
+    flex-wrap:nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    
+    
+}
+#boxImages::-webkit-scrollbar{
+    height:7px;
+    border-radius:10px;
+}
+#boxImages::-webkit-scrollbar-track{
+    background-color: #abe4fa;
+    border-radius: 10px !important;
+}
+#boxImages::-webkit-scrollbar-thumb{
+    background-color: rgb(0, 26, 255);
+    outline: 1px solid #eee;
+    border-radius: 10px !important;
+}
+#boxImages {
+    scrollbar-color: rgb(0, 26, 255) #abe4fa;
+    scrollbar-width: thin;
+}
+
+.Images img{
+    width: 200px;
+    height: 200px;
+    border-radius: 8px ;
+    padding: 0 10px 0 10px;
+}
+.Images{
+   
+    margin:5px;
+    cursor: pointer;
+    object-fit: cover;
+    border: solid 1px rgb(95, 94, 94);
+    border-radius: 8px ;
+    background-color:#fff;
+    padding:10px 0 0 0;
+}
+#arrowLeft img{
+    width: 35px;
+    transform: rotate(90deg);
+}
+#arrowRight img{
+    width: 35px;
+    transform: rotate(-90deg);
+}
+.arrow{
+    margin:0 10px
+}
+.Images p , span ,button {
+    font-family:IRANSans;
+}
+.Images p{
+    text-decoration: line-through;
+    color:red;
+    display: inline-block;
+}
+.Images span{
+    text-decoration: none !important;
+    color:green
+}
+.Images button{
+    margin:0 0 15px 0;
+    padding: 5px 10px 5px 10px;
+    border-radius: 8px;
+    border: solid 1px green;
+    color:green;
+    background:rgb(243, 243, 243);
+}
+.Images button:hover{
+    color:#fff;
+    background:green;
+}
